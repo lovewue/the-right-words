@@ -24,12 +24,14 @@ a {
 .site-header {
   padding: 24px 0;
   border-bottom: 1px solid #e5e5e5;
+  background: #fff;
 }
 
 .header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 32px;
 }
 
 .site-logo-link {
@@ -37,7 +39,7 @@ a {
 }
 
 .site-logo {
-  max-height: 48px;
+  max-height: 64px;
   display: block;
 }
 
@@ -52,20 +54,20 @@ a {
 }
 
 .site-nav a {
-  font-family: "Daisy Wheel", "Times New Roman", Times, serif;
-  font-size: 14px;
+  font-family: "Courier New", Courier, "Times New Roman", serif;
+  font-size: 13px;
   letter-spacing: 0.08em;
   text-decoration: none;
   color: #111;
   padding: 0 10px;
   line-height: 1;
+  text-transform: uppercase;
 }
 
 .site-nav a:hover {
   opacity: 0.7;
 }
 
-/* Divider between nav items */
 .site-nav a + a::before {
   content: "|";
   color: #999;
@@ -78,6 +80,18 @@ a {
 ----------------------------------------------------------------------------- */
 .site-main {
   min-height: 70vh;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Homepage Splash
+----------------------------------------------------------------------------- */
+.home-splash {
+  height: calc(100vh - 113px);
+  background-image: url("{{asset_prefix}}static/images/homepage-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
@@ -118,32 +132,6 @@ a {
 
 
 /* -----------------------------------------------------------------------------
-   Homepage
------------------------------------------------------------------------------ */
-.home-hero {
-  padding: 120px 0 80px;
-}
-
-.home-hero h1 {
-  margin: 0 0 16px;
-  font-size: 3rem;
-}
-
-.home-hero p {
-  margin: 0;
-  font-size: 1.2rem;
-  line-height: 1.7;
-  max-width: 640px;
-}
-
-.home-cta {
-  margin-top: 32px;
-  display: flex;
-  gap: 16px;
-}
-
-
-/* -----------------------------------------------------------------------------
    Buttons
 ----------------------------------------------------------------------------- */
 .button {
@@ -163,43 +151,6 @@ a {
   background: transparent;
   color: #111;
   border: 1px solid #111;
-}
-
-
-/* -----------------------------------------------------------------------------
-   Homepage Cards
------------------------------------------------------------------------------ */
-.home-section {
-  padding: 60px 0 100px;
-}
-
-.home-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-}
-
-.home-card {
-  display: block;
-  padding: 28px;
-  border: 1px solid #e5e5e5;
-  text-decoration: none;
-  color: inherit;
-  transition: border-color 0.2s ease, transform 0.2s ease;
-}
-
-.home-card:hover {
-  border-color: #111;
-  transform: translateY(-2px);
-}
-
-.home-card h2 {
-  margin: 0 0 10px;
-}
-
-.home-card p {
-  margin: 0;
-  line-height: 1.6;
 }
 
 
@@ -232,16 +183,13 @@ a {
     justify-content: center;
   }
 
-  .home-grid {
-    grid-template-columns: 1fr;
+  .site-logo {
+    max-height: 56px;
   }
 
-  .home-hero {
-    padding: 90px 0 60px;
-  }
-
-  .home-hero h1 {
-    font-size: 2.4rem;
+  .home-splash {
+    height: calc(100vh - 140px);
+    background-position: center;
   }
 
   .page-hero h1 {
