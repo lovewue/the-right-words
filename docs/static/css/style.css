@@ -45,7 +45,7 @@ a {
 
 
 /* -----------------------------------------------------------------------------
-   Header Navigation
+   Header Navigation (Courier + Dividers)
 ----------------------------------------------------------------------------- */
 .site-nav {
   display: flex;
@@ -54,9 +54,9 @@ a {
 }
 
 .site-nav a {
-  font-family: "Courier New", Courier, "Times New Roman", serif;
+  font-family: "Courier New", Courier, monospace;
   font-size: 13px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-decoration: none;
   color: #111;
   padding: 0 10px;
@@ -68,6 +68,7 @@ a {
   opacity: 0.7;
 }
 
+/* divider */
 .site-nav a + a::before {
   content: "|";
   color: #999;
@@ -84,12 +85,12 @@ a {
 
 
 /* -----------------------------------------------------------------------------
-   Homepage Splash
+   Homepage Splash (image only)
 ----------------------------------------------------------------------------- */
 .home-splash {
   height: calc(100vh - 113px);
   background-image: url("../images/homepage-background.png");
-  background-size: cover;
+  background-size: 80% auto;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -173,6 +174,7 @@ a {
    Responsive
 ----------------------------------------------------------------------------- */
 @media (max-width: 800px) {
+
   .header-inner {
     flex-direction: column;
     gap: 18px;
@@ -189,10 +191,11 @@ a {
 
   .home-splash {
     height: calc(100vh - 140px);
-    background-position: center;
+    background-size: 95% auto;
   }
 
   .page-hero h1 {
     font-size: 2rem;
   }
+
 }
