@@ -185,10 +185,13 @@ a {
     max-height: 56px;
   }
 
-  .home-splash {
-    height: calc(100vh - 140px);
-    background-size: 95% auto;
-  }
+.home-splash {
+  height: calc(100vh - 113px);
+  background-image: url("../images/homepage-background.png");
+  background-size: min(932px, 90%);
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
   .page-hero h1 {
     font-size: 2rem;
