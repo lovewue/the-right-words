@@ -5,11 +5,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: #111;
-  background-color: #fff;
-  background-image: url("../images/Lined-Background.png");
-  background-repeat: repeat-y;
-  background-position: center top;
-  background-size: 932px auto;
+  background: #fff;
 }
 
 .container {
@@ -27,7 +23,7 @@ a {
 ----------------------------------------------------------------------------- */
 .site-header {
   padding: 20px 0 12px;
-  background: transparent;
+  background: #fff;
 }
 
 .header-inner {
@@ -79,35 +75,23 @@ a {
 
 
 /* -----------------------------------------------------------------------------
-   Main Layout
+   Main Layout (lined paper background)
 ----------------------------------------------------------------------------- */
 .site-main {
   min-height: 70vh;
+
+  background-image: url("../images/Lined-Background.png");
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: 932px auto;
 }
 
 
 /* -----------------------------------------------------------------------------
-   Homepage
+   Homepage spacing
 ----------------------------------------------------------------------------- */
 .home-intro {
   min-height: calc(100vh - 96px);
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-top: 120px;
-}
-
-.home-intro-inner {
-  width: 100%;
-  text-align: center;
-}
-
-.home-intro-inner p {
-  margin: 0;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 22px;
-  letter-spacing: 0.06em;
-  line-height: 1.6;
 }
 
 
@@ -152,6 +136,7 @@ a {
 ----------------------------------------------------------------------------- */
 .site-footer {
   padding: 32px 0;
+  background: #fff;
 }
 
 .site-footer p {
@@ -165,6 +150,7 @@ a {
    Responsive
 ----------------------------------------------------------------------------- */
 @media (max-width: 800px) {
+
   .header-inner {
     flex-direction: column;
     gap: 18px;
@@ -184,16 +170,8 @@ a {
     font-size: 14px;
   }
 
-  .home-intro {
-    min-height: calc(100vh - 120px);
-    padding-top: 80px;
-  }
-
-  .home-intro-inner p {
-    font-size: 18px;
-  }
-
   .page-hero h1 {
     font-size: 2rem;
   }
+
 }
