@@ -22,16 +22,19 @@ a {
    Header
 ----------------------------------------------------------------------------- */
 .site-header {
-  padding: 24px 0 18px;
-  border-bottom: 1px solid #e5e5e5;
+  padding: 20px 0 12px;
   background: #fff;
 }
 
 .header-inner {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;   /* bottom align */
+  align-items: flex-end;
   gap: 32px;
+}
+
+.site-logo-link {
+  display: inline-block;
 }
 
 .site-logo {
@@ -41,18 +44,18 @@ a {
 
 
 /* -----------------------------------------------------------------------------
-   Header Navigation
+   Header Navigation (Courier + Dividers)
 ----------------------------------------------------------------------------- */
 .site-nav {
   display: flex;
-  align-items: flex-end;   /* bottom align text */
+  align-items: flex-end;
   gap: 0;
 }
 
 .site-nav a {
   font-family: "Courier New", Courier, monospace;
-  font-size: 15px;          /* bigger */
-  letter-spacing: 0.04em;
+  font-size: 16px;
+  letter-spacing: 0.03em;
   text-decoration: none;
   color: #111;
   padding: 0 10px;
@@ -60,15 +63,14 @@ a {
   text-transform: uppercase;
 }
 
-/* divider */
+.site-nav a:hover {
+  opacity: 0.7;
+}
+
 .site-nav a + a::before {
   content: "|";
   color: #999;
   margin-right: 10px;
-}
-
-.site-nav a:hover {
-  opacity: 0.7;
 }
 
 
@@ -81,13 +83,13 @@ a {
 
 
 /* -----------------------------------------------------------------------------
-   Homepage Splash (image only)
+   Homepage Splash (top aligned fixed size)
 ----------------------------------------------------------------------------- */
 .home-splash {
-  height: calc(100vh - 113px);
+  height: calc(100vh - 96px);
   background-image: url("../images/homepage-background.png");
-  background-size: 70% auto;
-  background-position: center;
+  background-size: min(932px, 90%);
+  background-position: center top;
   background-repeat: no-repeat;
 }
 
@@ -156,7 +158,6 @@ a {
 ----------------------------------------------------------------------------- */
 .site-footer {
   padding: 32px 0;
-  border-top: 1px solid #e5e5e5;
 }
 
 .site-footer p {
@@ -185,13 +186,11 @@ a {
     max-height: 56px;
   }
 
-.home-splash {
-  height: calc(100vh - 113px);
-  background-image: url("../images/homepage-background.png");
-  background-size: min(932px, 90%);
-  background-position: center;
-  background-repeat: no-repeat;
-}
+  .home-splash {
+    height: calc(100vh - 120px);
+    background-size: 95%;
+    background-position: center top;
+  }
 
   .page-hero h1 {
     font-size: 2rem;
