@@ -448,6 +448,37 @@ a {
   margin-bottom: 18px;
 }
 
+/* ---------------------------------------
+   Projects Sub Nav
+--------------------------------------- */
+
+.projects-subnav {
+  padding: 18px 0 40px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.projects-subnav nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 15px;
+}
+
+.projects-subnav a {
+  color: #111;
+}
+
+.projects-subnav a:hover {
+  opacity: 0.6;
+}
+
+.projects-subnav em {
+  font-style: italic;
+}
+
+.projects-subnav .divider {
+  color: #777;
+}
 
 /* -----------------------------------------------------------------------------
    Contact
