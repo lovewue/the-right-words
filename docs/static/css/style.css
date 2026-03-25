@@ -462,18 +462,14 @@ a {
   white-space: nowrap;
 }
 
-/* alignment */
 .haiku-poem.left {
   text-align: left;
 }
 
 .haiku-poem.right {
   text-align: right;
+  width: fit-content;
   margin-left: auto;
-}
-
-.haiku-poem.right p {
-  text-align: right;
 }
 
 .haiku-poem.middle {
@@ -488,16 +484,13 @@ a {
   margin-top: 30px;
 }
 
-/* indents */
 .haiku-poem.left.lower {
   margin-left: 100px;
 }
 
 .haiku-poem.right.middle {
-  margin-left: auto;
   padding-right: 100px;
 }
-
 /* -----------------------------------------------------------------------------
    Fragments
 ----------------------------------------------------------------------------- */
