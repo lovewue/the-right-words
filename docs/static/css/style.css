@@ -453,11 +453,13 @@ a {
 .haiku-poem {
   max-width: 260px;
   margin-bottom: 60px;
+  overflow: visible;
 }
 
 .haiku-poem p {
   margin: 0;
   line-height: 1.5;
+  white-space: nowrap;
 }
 
 .haiku-poem.left {
@@ -481,7 +483,8 @@ a {
   margin-top: 30px;
 }
 
-.haiku-poem.left.middle {
+/* Indents */
+.haiku-poem.left.lower {
   margin-left: 100px;
 }
 
@@ -489,7 +492,6 @@ a {
   margin-left: auto;
   padding-right: 100px;
 }
-
 
 /* -----------------------------------------------------------------------------
    Fragments
