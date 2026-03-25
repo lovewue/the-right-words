@@ -454,33 +454,32 @@ a {
   margin-top: 80px;
 }
 
+/* base poem block */
 .haiku-poem {
   max-width: 260px;
   margin-bottom: 60px;
   overflow: visible;
 }
 
+/* lines */
 .haiku-poem p {
   margin: 0;
   line-height: 1.5;
   white-space: nowrap;
 }
 
+/* alignment */
 .haiku-poem.left {
   text-align: left;
 }
 
 .haiku-poem.right {
-  text-align: right;
-  margin-left: auto;
-}
-
-.haiku-poem.right p {
   width: fit-content;
   margin-left: auto;
   text-align: right;
 }
 
+/* vertical spacing variations */
 .haiku-poem.middle {
   margin-top: 30px;
 }
@@ -499,7 +498,7 @@ a {
 }
 
 .haiku-poem.right.middle {
-  padding-right: 100px;
+  margin-right: 100px;
 }
 /* -----------------------------------------------------------------------------
    Fragments
