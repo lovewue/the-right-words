@@ -420,9 +420,13 @@ a {
 }
 
 .haiku-featured p {
-  margin: 0 0 14px;
+  margin: 0;
   font-size: 15px;
-  line-height: 1.9;
+  line-height: 1.5;
+  white-space: nowrap;
+  width: fit-content;
+  margin-left: auto;
+  text-align: right;
 }
 
 .haiku-status-wrap {
@@ -468,8 +472,13 @@ a {
 
 .haiku-poem.right {
   text-align: right;
+  margin-left: auto;
+}
+
+.haiku-poem.right p {
   width: fit-content;
   margin-left: auto;
+  text-align: right;
 }
 
 .haiku-poem.middle {
@@ -484,6 +493,7 @@ a {
   margin-top: 30px;
 }
 
+/* stagger indents */
 .haiku-poem.left.lower {
   margin-left: 100px;
 }
