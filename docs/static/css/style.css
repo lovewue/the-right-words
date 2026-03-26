@@ -209,13 +209,13 @@ a {
 }
 
 .service-intro {
-  max-width: 800px;
-  margin: 0 0 28px;
+  max-width: 900px;
+  margin: 0 0 10px;
 }
 
 .service-center {
   max-width: 760px;
-  margin: 60px auto 0;
+  margin: 10px auto 0;
   text-align: center;
 }
 
