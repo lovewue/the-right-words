@@ -146,11 +146,13 @@ a {
 
 .block.right {
   max-width: 800px;
+  margin-left: auto;
   text-align: right;
+  white-space: nowrap;
 }
 
 .block.center {
-  text-align: right;
+  text-align: center;
   max-width: 800px;
 
 }
