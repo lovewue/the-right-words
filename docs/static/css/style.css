@@ -120,7 +120,7 @@ a {
    Homepage
 ----------------------------------------------------------------------------- */
 .home-hero {
-  padding: 200px 0 120px;
+  padding: 240px 0 120px;
 }
 
 .home-composition {
@@ -172,6 +172,17 @@ a {
   margin-left: auto;
   max-width: 500px;
   height: auto;
+}
+
+.home-white-break {
+  background: #fff;
+  padding: 40px 0;
+  
+  /* full-width white band */
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
 }
 
 /* -----------------------------------------------------------------------------
