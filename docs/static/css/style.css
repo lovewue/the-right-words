@@ -162,6 +162,16 @@ a {
   margin-top: 120px;
 }
 
+.block.subheading {
+  margin-bottom: 20px;
+}
+
+.block.subheading img {
+  display: block;
+  margin-left: auto;
+  max-width: 100%;
+  height: auto;
+}
 
 /* -----------------------------------------------------------------------------
    Services
