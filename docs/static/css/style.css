@@ -3,7 +3,8 @@
 ----------------------------------------------------------------------------- */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 0.02em;
   color: #111;
   background: #fff;
 }
@@ -123,7 +124,7 @@ a {
 }
 
 .home-composition {
-  font-family: Times New Roman; "Courier New", Courier, monospace;
+  font-family: "Times New Roman", Times, serif;
   line-height: 1.9;
 }
 
