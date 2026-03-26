@@ -191,6 +191,11 @@ a {
   font-family: "Courier New", Courier, monospace;
 }
 
+.block.center.spaced.courier {
+  margin-top: 110px;
+  margin-bottom: 10px;
+}
+
 /* -----------------------------------------------------------------------------
    Services
 ----------------------------------------------------------------------------- */
