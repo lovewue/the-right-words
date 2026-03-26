@@ -151,7 +151,7 @@ a {
 
 .block.right {
   max-width: 900px;
-  margin: 40px 0 40px auto;
+  margin-left: auto;
   text-align: right;
   white-space: nowrap;
 }
@@ -185,7 +185,6 @@ a {
   padding-left: calc(50vw - 50%);
   padding-right: calc(50vw - 50%);
 }
-
 /* -----------------------------------------------------------------------------
    Services
 ----------------------------------------------------------------------------- */
