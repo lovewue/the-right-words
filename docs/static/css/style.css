@@ -503,6 +503,7 @@ a {
 }
 
 .nf-poem {
+  font-family: "Courier New", Courier, monospace;
   text-align: center;
   padding-top: 90px;
 }
@@ -516,7 +517,22 @@ a {
   text-align: right;
 }
 
+.project-status {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin: 80px 0 40px;
+  letter-spacing: 0.15em;
+}
 
+.project-cta-stack {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.project-cta-stack p {
+  margin: 0 0 14px;
+}
 /* -----------------------------------------------------------------------------
    Haiku Project
 ----------------------------------------------------------------------------- */
