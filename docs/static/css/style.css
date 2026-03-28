@@ -420,6 +420,7 @@ a {
 ----------------------------------------------------------------------------- */
 .projects-subnav {
   padding: 8px 0 34px;
+  margin-top: 40px;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
 }
