@@ -274,6 +274,55 @@ a {
   top: 0;
 }
 
+.service-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  column-gap: 80px;
+  margin-top: 100px;
+  align-items: start;
+}
+
+.service-detail-col h2 {
+  margin: 0 0 34px;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.service-detail-col p {
+  margin: 0 0 24px;
+  line-height: 1.9;
+}
+
+.service-detail-side {
+  max-width: 360px;
+}
+
+.service-cta-inline {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.service-cta-inline p {
+  margin: 0 0 18px;
+}
+
+.service-cta-inline p:first-child {
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.12em;
+}
+
+.service-detail-grid {
+  grid-template-columns: 1fr;
+  row-gap: 50px;
+}
+
+.service-detail-side {
+  max-width: 100%;
+}
+
 /* -----------------------------------------------------------------------------
    Services white break
 ----------------------------------------------------------------------------- */
