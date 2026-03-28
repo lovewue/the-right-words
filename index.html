@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiffany W Edwards</title>
+  <meta
+    name="description"
+    content="Tiffany W Edwards — thoughtfully written words for personal and professional occasions."
+  />
+  <style>
+    :root {
+      --bg: #f8f5ef;
+      --paper: rgba(255, 255, 255, 0.72);
+      --text: #1f1a17;
+      --muted: #6a625c;
+      --line: rgba(31, 26, 23, 0.12);
+      --accent: #2f4a57;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background:
+        linear-gradient(to bottom, rgba(255,255,255,0.45), rgba(255,255,255,0.45)),
+        repeating-linear-gradient(
+          to bottom,
+          transparent 0,
+          transparent 35px,
+          rgba(31, 26, 23, 0.05) 36px
+        ),
+        var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 760px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 56px 42px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      backdrop-filter: blur(4px);
+    }
+
+    .eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(2.2rem, 5vw, 4.2rem);
+      font-weight: 400;
+      line-height: 1.05;
+      letter-spacing: 0.02em;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: var(--muted);
+      max-width: 580px;
+      margin: 0 auto 30px;
+    }
+
+    .divider {
+      width: 72px;
+      height: 1px;
+      background: var(--line);
+      margin: 0 auto 30px;
+    }
+
+    .note {
+      font-size: 1rem;
+      line-height: 1.8;
+      margin: 0 auto;
+      max-width: 560px;
+    }
+
+    .email {
+      display: inline-block;
+      margin-top: 28px;
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(47, 74, 87, 0.35);
+      padding-bottom: 2px;
+      font-size: 1rem;
+    }
+
+    .email:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    .footer {
+      margin-top: 34px;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 640px) {
+      .card {
+        padding: 40px 24px;
+      }
+
+      .subtitle,
+      .note {
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="eyebrow">Coming Soon</div>
+
+    <h1>Tiffany W Edwards</h1>
+
+    <p class="subtitle">
+      Thoughtfully written words for personal and professional occasions.
+    </p>
+
+    <div class="divider"></div>
+
+    <p class="note">
+      A new website is currently being prepared.
+      <br><br>
+      For enquiries in the meantime, please get in touch by email.
+    </p>
+
+    <a class="email" href="mailto:hello@tiffanywedwards.com">hello@tiffanywedwards.com</a>
+
+    <div class="footer">
+      Reflect. Compose. Connect.
+    </div>
+  </main>
+</body>
+</html>
