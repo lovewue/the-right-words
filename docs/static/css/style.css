@@ -448,6 +448,9 @@ a {
   color: #777;
 }
 
+.projects-subnav-main {
+  margin-top: 60px;
+}
 
 /* -----------------------------------------------------------------------------
    Shared Project Page Styles
