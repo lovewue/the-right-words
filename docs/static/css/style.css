@@ -699,6 +699,11 @@ a {
   margin-top: 10px;
 }
 
+.form-status {
+  margin-top: 20px;
+  font-style: italic;
+}
+
 
 /* -----------------------------------------------------------------------------
    Footer

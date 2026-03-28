@@ -37,14 +37,13 @@
       <em>or</em> email me at hello@tiffanywedwards.com.
     </p>
 
-    <form 
-      class="contact-form" 
+    <form
+      class="contact-form"
       id="contact-form"
-      method="POST" 
+      method="POST"
       action="https://formspree.io/f/xbdpdaej"
     >
-
-      <input type="hidden" name="_subject" value="New enquiry — Tiffany W Edwards">
+      <input type="hidden" name="_subject" value="New enquiry — The Right Words">
       <input type="text" name="_gotcha" style="display:none">
 
       <div class="form-row two">
@@ -73,12 +72,15 @@
         </div>
       </div>
 
+      <div class="form-row captcha-row">
+        <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_SITE_KEY"></div>
+      </div>
+
       <div class="form-row">
         <button type="submit" class="form-submit">Submit</button>
       </div>
 
       <p class="form-status" id="form-status"></p>
-
     </form>
 
   </div>
@@ -90,6 +92,7 @@
     <p>&copy; 2026 Tiffany W Edwards. All rights reserved.</p>
   </div>
 </footer>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contact-form");
