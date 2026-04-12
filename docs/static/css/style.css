@@ -1,0 +1,1184 @@
+/* -----------------------------------------------------------------------------
+   Base
+----------------------------------------------------------------------------- */
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 0.1em;
+  color: #111;
+  background: #fff;
+}
+
+.container {
+  width: min(932px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Header
+----------------------------------------------------------------------------- */
+.site-header {
+  padding: 20px 0 12px;
+  background: #fff;
+  position: relative;
+  z-index: 1000;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px;
+  position: relative;
+}
+
+.site-logo-link {
+  display: inline-block;
+  flex-shrink: 1;
+}
+
+.site-logo {
+  max-height: 64px;
+  display: block;
+  width: auto;
+}
+
+.site-nav a.is-hidden {
+  display: none;
+}
+
+.site-nav {
+  position: relative;
+  top: -9px; 
+}
+
+
+/* -----------------------------------------------------------------------------
+   Header Navigation
+----------------------------------------------------------------------------- */
+.site-nav {
+  display: flex;
+  align-items: flex-end;
+  gap: 0;
+}
+
+.site-nav a {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: #111;
+  padding: 0 10px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+}
+
+.site-nav a:hover {
+  opacity: 0.7;
+}
+
+.site-nav a + a::before {
+  content: "|";
+  color: #999;
+  margin-right: 10px;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Mobile nav base (hidden on desktop)
+----------------------------------------------------------------------------- */
+.mobile-nav {
+  display: none;
+}
+
+.mobile-subnav {
+  display: none;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Hamburger Button
+----------------------------------------------------------------------------- */
+.menu-toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  width: 32px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-shrink: 0;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 1.5px;
+  background: #111;
+  width: 100%;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.menu-toggle.is-open span:nth-child(1) {
+  transform: translateY(10.5px) rotate(45deg);
+}
+
+.menu-toggle.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.is-open span:nth-child(3) {
+  transform: translateY(-10.5px) rotate(-45deg);
+}
+
+
+/* -----------------------------------------------------------------------------
+   Main Layout
+----------------------------------------------------------------------------- */
+.site-main {
+  min-height: 70vh;
+  background-image: url("../images/Lined-Background.png");
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: 932px auto;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Shared Page Sections
+----------------------------------------------------------------------------- */
+.page-hero {
+  padding: 40px 0 24px;
+}
+
+.page-hero h1 {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.page-section {
+  padding: 16px 0 72px;
+}
+
+.content-narrow {
+  max-width: 760px;
+}
+
+.content-narrow p {
+  line-height: 1.9;
+  margin: 0 0 28px;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Homepage
+----------------------------------------------------------------------------- */
+.home-hero {
+  padding: 300px 0 120px;
+}
+
+.home-composition {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.9;
+}
+
+.tagline {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  margin: 80px 0 200px;
+  font-weight: bold;
+}
+
+.block {
+  font-size: 15px;
+  margin: 0;
+}
+
+.block + .block {
+  margin-top: 45px;
+}
+
+.block.left {
+  max-width: 800px;
+  text-align: left;
+}
+
+.block.right {
+  max-width: 900px;
+  margin-left: auto;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.block.center {
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+   font-weight: bold;
+}
+
+.spaced {
+  margin-top: 120px;
+}
+
+.block.subheading {
+  margin-bottom: 20px;
+}
+
+.block.subheading img {
+  display: block;
+  margin-left: auto;
+  max-width: 500px;
+  height: auto;
+}
+
+.home-white-break {
+  background: #fff;
+  padding: 70px 0 30px;
+  margin: -100px calc(50% - 50vw) 40px;
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+}
+
+.courier {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.block.center.spaced.courier {
+  margin-top: 60px;
+  margin-bottom: 0px;
+}
+
+.block.center.spaced.courier + .block {
+  margin-top: 10px;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Services
+----------------------------------------------------------------------------- */
+.service-layout {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.9;
+}
+
+.service-intro {
+  max-width: 900px;
+  margin: 0 0 0px;
+}
+
+.service-center {
+  max-width: 760px;
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+.process-space {
+  margin-top: 100px;
+}
+
+.service-steps {
+  text-align: center;
+  margin: 100px auto 0;
+}
+
+.service-steps p {
+  margin: 0 0 18px;
+}
+
+.service-cta {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.service-cta p {
+  margin: 0 0 16px;
+}
+
+.services-heading {
+  margin: 0 0 40px;
+  text-align: left;
+}
+
+.services-heading img {
+  display: block;
+  max-width: 420px;
+  height: auto;
+}
+
+.service-bullets {
+  margin: 0 0;
+}
+
+.service-bullets p {
+  position: relative;
+  padding-left: 22px;
+  margin: 0 0 22px;
+  text-align: justify;
+}
+
+.service-bullets p::before {
+  content: "▪";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.service-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 80px;
+  margin-top: 60px;
+  align-items: start;
+}
+
+.service-detail-col {
+  min-width: 0;
+  text-align: justify;
+}
+
+.service-detail-col h2 {
+  margin: 0 0 34px;
+  font-family: 'Bebas Neue', 'Arial Narrow', 'Helvetica Neue Condensed Bold', 'Impact', sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.service-detail-col p {
+  margin: 0 0 24px;
+  line-height: 1.9;
+}
+
+.service-detail-side {
+  max-width: 360px;
+}
+
+.service-cta-inline {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.service-cta-inline p {
+  margin: 0 0 18px;
+}
+
+.service-cta-inline p:first-child {
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.12em;
+  
+}
+
+
+/* -----------------------------------------------------------------------------
+   Services white break
+----------------------------------------------------------------------------- */
+.services-white-break {
+  background: #fff;
+  padding: 60px 0 20px;
+  margin: -20px calc(50% - 50vw) 40px;
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+}
+
+.services-white-break .service-intro:first-child {
+  margin-top: 0;
+}
+
+.services-white-break .service-center:last-child {
+  margin-bottom: 0;
+}
+
+
+/* -----------------------------------------------------------------------------
+   About
+----------------------------------------------------------------------------- */
+.about-hero {
+  padding: 60px 0 60px;
+  text-align: justify;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  column-gap: 70px;
+  align-items: start;
+}
+
+.about-text-col h1 {
+  margin: 0 0 36px;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.about-copy {
+  font-family: "Times New Roman", Times, serif;
+  max-width: 560px;
+}
+
+.about-copy p {
+  margin: 0 0 34px;
+  line-height: 1.75;
+  font-size: 15px;
+}
+
+.about-image-col {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-image-frame {
+  padding: 0;
+}
+
+.about-image-frame img {
+  display: block;
+  height: auto;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Projects Index
+----------------------------------------------------------------------------- */
+.projects-index {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.projects-index p {
+  margin: 0 0 40px;
+  line-height: 1.8;
+}
+
+.projects-note {
+  margin: 30px 0 40px;
+}
+
+.project-list p {
+  margin: 14px 0;
+}
+
+.project-list a:hover {
+  text-decoration: underline;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Projects Sub Nav
+----------------------------------------------------------------------------- */
+.projects-subnav {
+  padding: 8px 0 34px;
+  margin-top: 40px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.projects-subnav nav {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 15px;
+}
+
+.projects-subnav a {
+  color: #111;
+}
+
+.projects-subnav a:hover {
+  opacity: 0.6;
+}
+
+.projects-subnav em {
+  font-style: italic;
+}
+
+.projects-subnav .divider {
+  color: #777;
+}
+
+.projects-index .projects-subnav {
+  margin-top: 20px;
+}
+
+.page-hero.projects-hero {
+  padding-bottom: 60px;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Shared Project Page Styles
+----------------------------------------------------------------------------- */
+.project-page {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.project-page h1 {
+  margin-bottom: 40px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.page-hero h1 em {
+  font-style: italic;
+  text-transform: none;
+}
+
+.project-page p {
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.project-status {
+  text-align: center;
+  margin: 40px 0 40px;
+  letter-spacing: 0.15em;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.project-cta-stack {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: normal;
+}
+
+.project-cta-stack p {
+  margin: 0 0 14px;
+}
+
+.project-cta-stack a {
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Not Famous Last Words
+----------------------------------------------------------------------------- */
+.nf-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  column-gap: 80px;
+  align-items: start;
+}
+
+.nf-copy {
+  max-width: 520px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+}
+
+.nf-poem {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+  line-height: 1.8;
+  text-align: center;
+  padding-top: 90px;
+}
+
+.nf-poem p {
+  margin: 0 0 14px;
+  
+}
+
+.poem-credit {
+  margin-top: 30px !important;
+  text-align: right;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Haiku Project
+----------------------------------------------------------------------------- */
+.haiku-section {
+  padding-top: 0;
+}
+
+.haiku-feature-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 625px) 1fr;
+  column-gap: 70px;
+  align-items: start;
+}
+
+.haiku-panel {
+  position: relative;
+  min-height: 625px;
+  background-image: url("../images/haiku-book.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.haiku-overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 430px;
+  padding: 18px 18px 18px 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.haiku-overlay-text p {
+  margin: 0 0 18px;
+  line-height: 1.9;
+  font-size: 15px;
+}
+
+.haiku-featured {
+  font-family: "Times New Roman", Times, serif;
+  text-align: right;
+  align-self: center;
+  padding-top: 250px;
+  width: 320px;
+  margin-left: auto;
+}
+
+.haiku-featured p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.haiku-status-wrap {
+  margin-top: 36px;
+  max-width: 542px;
+  text-align: center;
+}
+
+.centered-status {
+  text-align: center;
+  margin: 0 0 24px;
+}
+
+.centered-status p {
+  margin: 0;
+  letter-spacing: 0.15em;
+}
+
+.haiku-preorder p {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+}
+
+.haiku-poem-grid {
+  margin-top: 80px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.haiku-poem {
+  max-width: 320px;
+  margin-bottom: 60px;
+}
+
+.haiku-poem p {
+  margin: 0;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.haiku-poem.left {
+  text-align: left;
+  width: 320px;
+}
+
+.haiku-poem.right {
+  text-align: right;
+  width: 320px;
+  margin-left: auto;
+}
+
+.haiku-poem.right p {
+  text-align: right;
+}
+
+.haiku-poem.middle {
+  margin-top: 30px;
+}
+
+.haiku-poem.lower {
+  margin-top: 60px;
+}
+
+.haiku-poem.bottom {
+  margin-top: 30px;
+}
+
+.haiku-poem.left.middle {
+  transform: translateX(100px);
+}
+
+.haiku-poem.left.lower {
+  transform: translateX(100px);
+}
+
+.haiku-poem.right.middle {
+  transform: translateX(-100px);
+}
+
+.haiku-poem.right.bottom {
+  margin-top: 0px; 
+}
+
+/* -----------------------------------------------------------------------------
+   Fragments
+----------------------------------------------------------------------------- */
+.fragments-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  align-items: start;
+}
+
+.fragment-col p {
+  margin-bottom: 18px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+  
+}
+
+.fragment-label {
+  text-align: left;
+  margin-bottom: 0px;
+  letter-spacing: 0.08em;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.fragment-mini {
+  margin-top: 40px;
+  text-align: right;
+}
+
+.fragment-full {
+  margin-top: 40px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+}
+
+.fragment-full p {
+  margin-bottom: 18px;
+}
+
+
+/* --------------------------------
+   Contact Form
+-------------------------------- */
+.contact-layout {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.contact-intro {
+  margin-bottom: 12px;
+}
+
+.contact-email {
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  margin-top: 40px;
+}
+
+.form-row {
+  margin-bottom: 24px;
+}
+
+.form-row.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  border: 1px solid #999;
+  background: transparent;
+  padding: 12px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  box-sizing: border-box;
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.form-submit {
+  display: inline-block;
+  background: transparent;
+  background-color: transparent;
+  border: 1px solid #111;
+  padding: 12px 28px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  color: #111;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+button.form-submit {
+  background-color: transparent;
+}
+
+.form-submit:hover {
+  background: #111;
+  color: #fff;
+}
+
+.captcha-row {
+  margin-top: 10px;
+}
+
+.form-status {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Footer
+----------------------------------------------------------------------------- */
+.site-footer {
+  padding: 32px 0;
+  background: #fff;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Tablet
+----------------------------------------------------------------------------- */
+@media (max-width: 900px) {
+  .nf-grid,
+  .haiku-feature-grid,
+  .fragments-grid,
+  .service-detail-grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .nf-poem,
+  .haiku-featured,
+  .fragment-mini {
+    text-align: left;
+    padding-top: 0;
+  }
+
+  .poem-credit {
+    text-align: left;
+  }
+
+  .haiku-panel {
+    min-height: 520px;
+  }
+
+  .haiku-overlay-text {
+    position: relative;
+    width: auto;
+    padding: 18px 18px 18px 10px;
+  }
+
+  .service-detail-side,
+  .about-copy,
+  .nf-copy,
+  .projects-index {
+    max-width: 100%;
+  }
+
+  .about-image-col {
+    justify-content: flex-start;
+  }
+}
+
+
+/* -----------------------------------------------------------------------------
+   Mobile
+----------------------------------------------------------------------------- */
+@media (max-width: 800px) {
+  .container {
+    width: min(100% - 28px, 932px);
+  }
+
+  .site-header {
+    padding: 18px 0 10px;
+  }
+
+  .header-inner {
+    align-items: center;
+    gap: 16px;
+  }
+
+  .site-logo-link {
+    max-width: calc(100% - 50px);
+  }
+
+  .site-logo {
+    max-height: 42px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  .menu-toggle {
+    display: flex;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  .site-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 10px;
+    width: min(260px, calc(100vw - 28px));
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 14px 16px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    z-index: 1001;
+  }
+
+  .mobile-nav.is-open {
+    display: flex;
+  }
+
+  .mobile-nav a {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.4;
+    text-transform: uppercase;
+    padding: 0;
+  }
+
+  .mobile-subnav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-left: 14px;
+    margin-top: -6px;
+  }
+
+  .mobile-subnav a {
+    font-size: 13px;
+    text-transform: none;
+    letter-spacing: 0.04em;
+  }
+
+  .site-main {
+    background-size: 100% auto;
+  }
+
+  .page-hero {
+    padding: 44px 0 18px;
+  }
+
+  .page-hero h1 {
+    font-size: 14px;
+  }
+
+  .page-section {
+    padding: 12px 0 48px;
+  }
+
+  .home-hero {
+    padding: 120px 0 70px;
+  }
+
+  .tagline {
+    margin: 40px 0 70px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .block {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .block + .block {
+    margin-top: 28px;
+  }
+
+  .block.right,
+  .block.left,
+  .block.center,
+  .service-intro,
+  .service-center,
+  .content-narrow,
+  .about-copy,
+  .nf-copy,
+  .projects-index {
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .block.right,
+  .block.center,
+  .service-center,
+  .contact-copy,
+  .project-status,
+  .project-cta-stack,
+  .haiku-featured {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .block.subheading img,
+  .services-heading img {
+    max-width: 100%;
+  }
+
+  .home-white-break,
+  .services-white-break {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about-text-col h1,
+  .service-detail-col h2 {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+
+  .about-copy p,
+  .service-detail-col p,
+  .content-narrow p,
+  .haiku-overlay-text p,
+  .contact-layout p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .projects-subnav {
+    margin-top: 20px;
+    padding-bottom: 24px;
+    text-align: left;
+  }
+
+  .projects-subnav nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 6px;
+  }
+
+  .nf-poem,
+  .haiku-featured,
+  .fragment-mini {
+    padding-top: 0;
+  }
+
+  .haiku-panel {
+    min-height: 380px;
+    background-position: center top;
+  }
+
+  .haiku-featured {
+    width: auto;
+    padding-top: 0;
+  }
+
+  .haiku-featured p,
+  .haiku-poem p {
+    white-space: normal;
+  }
+
+  .haiku-poem {
+    width: auto !important;
+    max-width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    transform: none !important;
+    text-align: left !important;
+  }
+
+  .haiku-poem.right p {
+    text-align: left;
+  }
+
+  .fragments-grid {
+    row-gap: 24px;
+  }
+
+  .form-row.two {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .form-submit {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  .site-footer {
+    padding: 24px 0;
+  }
+
+  .site-footer p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
