@@ -356,9 +356,9 @@ a {
 
 .service-detail-col h2 {
   margin: 0 0 34px;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 18px;
-  letter-spacing: 0.02em;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   font-weight: normal;
 }
