@@ -763,11 +763,12 @@ a {
 .fragment-col p {
   margin-bottom: 18px;
   font-family: "Times New Roman", Times, serif;
+  text-align: justify;
   
 }
 
 .fragment-label {
-  text-align: center;
+  text-align: left;
   margin-bottom: 24px;
   letter-spacing: 0.08em;
   font-weight: bold;
