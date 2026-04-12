@@ -575,6 +575,7 @@ a {
 .nf-copy {
   max-width: 520px;
   font-family: "Times New Roman", Times, serif;
+  text-align: justify;
 }
 
 .nf-poem {
@@ -587,6 +588,7 @@ a {
 
 .nf-poem p {
   margin: 0 0 14px;
+  font-style: bold;
 }
 
 .poem-credit {
