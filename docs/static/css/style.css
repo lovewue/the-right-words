@@ -471,12 +471,12 @@ a {
 }
 
 .projects-index p {
-  margin: 0 0 18px;
+  margin: 0 0 40px;
   line-height: 1.8;
 }
 
 .projects-note {
-  margin: 50px 0 40px;
+  margin: 30px 0 40px;
 }
 
 .project-list p {
@@ -543,7 +543,7 @@ a {
 
 .project-page p {
   line-height: 1.9;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .project-status {
