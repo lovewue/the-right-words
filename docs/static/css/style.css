@@ -539,6 +539,12 @@ a {
 
 .project-page h1 {
   margin-bottom: 40px;
+  "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.page-hero h1 em {
+  font-style: italic;
 }
 
 .project-page p {
@@ -584,7 +590,7 @@ a {
   line-height: 1.8;
   text-align: center;
   padding-top: 90px;
-  font-style: bold;
+  font-weight: bold;
 }
 
 .nf-poem p {
