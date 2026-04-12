@@ -671,7 +671,7 @@ a {
 
 .haiku-status-wrap {
   margin-top: 36px;
-  max-width: 625px;
+  max-width: 542px;
   text-align: center;
 }
 
@@ -693,6 +693,7 @@ a {
 
 .haiku-poem-grid {
   margin-top: 80px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .haiku-poem {
