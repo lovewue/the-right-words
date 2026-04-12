@@ -796,6 +796,8 @@ a {
 -------------------------------- */
 .contact-layout {
   font-family: "Times New Roman", Times, serif;
+  background: #fff;
+  padding-top: 40px;
 }
 
 .contact-intro {
@@ -830,7 +832,7 @@ a {
 .form-field textarea {
   width: 100%;
   border: 1px solid #999;
-  background: transparent;
+  background: #fff;
   padding: 12px;
   font-family: "Times New Roman", Times, serif;
   font-size: 15px;
@@ -876,7 +878,6 @@ button.form-submit {
   margin-top: 20px;
   font-style: italic;
 }
-
 
 /* -----------------------------------------------------------------------------
    Footer
