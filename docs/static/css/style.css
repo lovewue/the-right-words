@@ -565,13 +565,17 @@ a {
 .project-cta-stack {
   text-align: center;
   margin-top: 30px;
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
 }
 
 .project-cta-stack p {
   margin: 0 0 14px;
+}
+
+.project-cta-stack a {
+  font-family: "Times New Roman", Times, serif;
 }
 
 
