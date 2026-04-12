@@ -196,9 +196,10 @@ a {
 .tagline {
   font-family: "Courier New", Courier, monospace;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0.08em;
   margin: 80px 0 140px;
+  font-weight: bold;
 }
 
 .block {
