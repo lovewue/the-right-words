@@ -762,12 +762,16 @@ a {
 
 .fragment-col p {
   margin-bottom: 18px;
+  font-family: "Times New Roman", Times, serif;
+  
 }
 
 .fragment-label {
   text-align: center;
   margin-bottom: 24px;
   letter-spacing: 0.08em;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .fragment-mini {
