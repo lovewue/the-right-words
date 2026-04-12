@@ -746,6 +746,9 @@ a {
   transform: translateX(-100px);
 }
 
+.haiku-poem.right.bottom {
+  margin-top: 20px; 
+}
 
 /* -----------------------------------------------------------------------------
    Fragments
