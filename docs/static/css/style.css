@@ -584,11 +584,12 @@ a {
   line-height: 1.8;
   text-align: center;
   padding-top: 90px;
+  font-style: bold;
 }
 
 .nf-poem p {
   margin: 0 0 14px;
-  font-style: bold;
+  
 }
 
 .poem-credit {
