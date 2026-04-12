@@ -76,6 +76,7 @@ a {
   padding: 0 10px;
   line-height: 1;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .site-nav a:hover {
