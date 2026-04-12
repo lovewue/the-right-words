@@ -414,7 +414,8 @@ a {
    About
 ----------------------------------------------------------------------------- */
 .about-hero {
-  padding: 10px 0 60px;
+  padding: 60px 0 60px;
+  text-align: justify;
 }
 
 .about-grid {
