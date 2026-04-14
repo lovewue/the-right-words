@@ -658,6 +658,20 @@ a {
   text-align: right;
 }
 
+/* -----------------------------------------------------------------------------
+   Not Famous white section
+----------------------------------------------------------------------------- */
+.nf-white {
+  background: #fff;
+
+  /* full-width breakout */
+  margin: 0 calc(50% - 50vw);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 /* -----------------------------------------------------------------------------
    Haiku Project
