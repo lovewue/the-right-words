@@ -489,6 +489,21 @@ a {
   height: auto;
 }
 
+/* -----------------------------------------------------------------------------
+   About white section
+----------------------------------------------------------------------------- */
+.about-white {
+  background: #fff;
+
+  /* full-width breakout (same pattern you're already using) */
+  margin: 0 calc(50% - 50vw);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 
 /* -----------------------------------------------------------------------------
    Projects Index
