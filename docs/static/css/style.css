@@ -148,10 +148,7 @@ a {
 ----------------------------------------------------------------------------- */
 .site-main {
   min-height: 70vh;
-  background-image: url("../images/Lined-Background.png");
-  background-repeat: repeat-y;
-  background-position: center top;
-  background-size: 932px auto;
+  background: none;
 }
 
 
