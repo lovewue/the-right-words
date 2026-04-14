@@ -187,14 +187,10 @@ a {
 /* -----------------------------------------------------------------------------
    Homepage
 ----------------------------------------------------------------------------- */
+
 .home-hero {
   padding: 200px 0 140px;
   background: none;
-}
-
-.home-composition {
-  font-family: "Times New Roman", Times, serif;
-  line-height: 1.9;
 }
 
 .tagline {
@@ -215,27 +211,36 @@ a {
   align-items: center;
   justify-content: center;
 
-  background-image: url("../images/Lined-Background.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100% auto;
+  background: none; /* remove lined background */
+}
+
+/* Full-width white section behind homepage copy */
+.home-white-break {
+  background: #fff;
+  padding: 70px 0 60px;
+  margin: -160px calc(50% - 50vw) 0;
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+}
+
+.home-composition {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.9;
 }
 
 .block {
   font-size: 15px;
   margin: 0;
-  background: #fff;
+  background: transparent;
 }
 
 .block + .block {
   margin-top: 45px;
-  background: #fff;
 }
 
 .block.left {
   max-width: 800px;
   text-align: left;
-  background: #fff;
 }
 
 .block.right {
@@ -243,16 +248,14 @@ a {
   margin-left: auto;
   text-align: right;
   white-space: nowrap;
-  background: #fff;
 }
 
 .block.center {
-  text-align: center;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
   font-weight: bold;
-  background: #fff;
 }
 
 .spaced {
@@ -270,14 +273,6 @@ a {
   height: auto;
 }
 
-.home-white-break {
-  background: #fff;
-  padding: 70px 0 30px;
-  margin: -160px calc(50% - 50vw) 40px; /* increased from -100px */
-  padding-left: calc(50vw - 50%);
-  padding-right: calc(50vw - 50%);
-}
-
 .courier {
   font-family: "Courier New", Courier, monospace;
 }
@@ -285,26 +280,25 @@ a {
 .block.center.spaced.courier {
   margin-top: 60px;
   margin-bottom: 0;
-  background: #fff;
 }
 
 .block.center.spaced.courier + .block {
   margin-top: 10px;
-  background: #fff;
 }
 
+/* Bottom lined panel */
 .home-composition > .block.center:last-child::after {
   content: "";
   display: block;
-  width: 932px;
+  width: 100%;
+  max-width: 932px;
   height: 84px;
   margin: 40px auto 0;
-  background-image: url("../images/lined-background.png");
+  background-image: url("../images/Lined-Background.png");
   background-repeat: no-repeat;
   background-position: bottom center;
-  background-size: 932px auto;
+  background-size: 100% auto;
 }
-
 /* -----------------------------------------------------------------------------
    Services
 ----------------------------------------------------------------------------- */
