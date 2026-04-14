@@ -637,6 +637,7 @@ a {
 .nf-white {
   background: #fff;
   display: flex;
+  padding: 50px 60px 40px 30px; /* top, right, bottom, left */
 }
 
 .nf-copy {
@@ -663,7 +664,6 @@ a {
   margin-top: 30px !important;
   text-align: right;
 }
-
 
 /* -----------------------------------------------------------------------------
    Haiku Project
