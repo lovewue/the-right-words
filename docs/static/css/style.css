@@ -810,7 +810,7 @@ a {
   padding-right: calc(50vw - 50%);
 
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 /* -----------------------------------------------------------------------------
