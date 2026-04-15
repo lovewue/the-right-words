@@ -809,8 +809,8 @@ a {
   padding-left: calc(50vw - 50%);
   padding-right: calc(50vw - 50%);
 
-  padding-top: 20px;
-  padding-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* -----------------------------------------------------------------------------
